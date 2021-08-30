@@ -8,16 +8,14 @@
 
 370개의 피처로 주어진 데이터 세트 기반에서 고객 만족 여부를 예측하는 Competition
 
-![image](https://user-images.githubusercontent.com/67913569/127973500-14408130-6566-466e-b26b-39dff02f0e8e.png)
+![image](https://user-images.githubusercontent.com/67913569/131330421-2ba8a012-dff2-4828-893e-a4e0d0375429.png)
 
 
 ## Data
 
-* application: 현재대출(고객 정보와 현재 대출 정보 제공)
-* previous_application: 과거대출이력(고객의 현재 대출 이전 과거 대출 정보 제공)
-* bureau: 타사 대출이력(고객의 현재 대출 이전 타사 대출 정보 제공)
-* bureau_bal: 타사 대출 월별 잔액(타사 대출의 월별  채무 이행 이력)
-* pos_cash_balance/installments/credit_card_balance: 현금/카드대출 잔액, 납부이력(월별 현금/카드대출 잔액, 대출 채무 이행 이력)
+* 피처 이름은 모두 익명 처리돼 이름만을 가지고 어떤 속성인지는 추정할 수 없음
+* 클래스 레이블 명은 TARGET이며, 이 값이 1이면 불만을 가진 고객, 0이면 만족한 고객
+* 대부분이 만족이고 불만족인 데이터가 일부
 
 <img src="https://user-images.githubusercontent.com/67913569/127853093-b8797cbb-2508-420c-b37c-6940e0e7c61f.png">
 
