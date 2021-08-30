@@ -16,9 +16,7 @@
 * 피처 이름은 모두 익명 처리돼 이름만을 가지고 어떤 속성인지는 추정할 수 없음
 * 클래스 레이블 명은 TARGET이며, 이 값이 1이면 불만을 가진 고객, 0이면 만족한 고객
 * 대부분이 만족이고 불만족인 데이터가 일부
-
-<img src="https://user-images.githubusercontent.com/67913569/127853093-b8797cbb-2508-420c-b37c-6940e0e7c61f.png">
-
+* 
 ## Metric: ROC AUC
 
 Submissions are evaluated on area under the ROC curve between the predicted probability and the observed target
