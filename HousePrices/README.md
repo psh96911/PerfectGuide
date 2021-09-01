@@ -13,23 +13,31 @@
 
 ## Data
 
-* 2011년 1월부터 2012년 12월까지 날짜/시간, 기온, 습도, 풍속 등의 정보를 기반으로 1시간 간격 동안의 자전거 대여 횟수가 기재되어 있음
-* 결정 값은 맨 마지막 컬럼인 count로 '대여 횟수'를 의미함
+* 주거용 주택의 모든 측면을 설명하는 79개의 설명 변수
+* Target 값은 맨 마지막 컬럼인 SalePrice
+* 80개의 변수 중 43개가 문자형, 나머지는 숫자형 변수
+* 데이터의 양에 비해 Null 값이 많은 피처도 존재
 
-## Metric:  Root-Mean-Squared-Error (RMSE)
 
+## Metric: Root Mean Squared Logarithmic Error (RMSLE)
+
+![image](https://user-images.githubusercontent.com/67913569/131610816-3e5d73ba-a11e-4634-aed0-3455f66bb481.png)
 
 
 ## Feature Engineering
 
-* Datetime 변수를 년, 월, 일, 시간과 같이 4개의 속성으로 분리
 * Target값을 정규분포 형태로 바꾸기 위해 로그변환
-* 범주형 변수를 One-Hot-Encoding
+* Null 값이 많은 일부 변수는 삭제
+* 나머지 Null 피처는 Null값이 많지 않으므로 숫자형의 경우 평균값으로 대체
+* 문자형 피처는 모두 One-Hot-Encoding으로 변환
+* skew함수를 통해 왜곡 정도가 1이상인 피처를 로그 변환 (연속형 변수만 해당)
+* 회귀 계수가 높은 피처에 대하여 이상치 제거
 
 ## Modeling
 
-* Random Forest
-* GBM
+* Linear Regression
+* Ridge
+* Lasso
 * XGBoost
 * LightGBM
 
